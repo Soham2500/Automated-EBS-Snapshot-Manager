@@ -1,0 +1,9 @@
+employee_id,name,department,title,location,start_date
+E201,Neha Kulkarni,Cloud Operations,Cloud Engineer,Pune,2023-03-13
+E202,Arjun Bose,Engineering,Python Developer,Bengaluru,2024-01-08
+E203,Priya Shah,Security,Security Analyst,Mumbai,2022-10-17
+E204,Aditya Menon,Finance,Financial Analyst,Kochi,2025-04-21
+E205,Ishita Roy,Customer Success,Account Manager,Kolkata,2024-07-01
+E206,Rahul Verma,IT Operations,System Administrator,Delhi,2023-09-25
+E207,Tara Joshi,Data,Data Engineer,Hyderabad,2025-02-10
+E208,Nikhil Jain,Engineering,QA Engineer,Jaipur,2024-11-18

@@ -1,0 +1,9 @@
+sku,product_name,category,quantity,unit_price_inr,reorder_level,warehouse
+SKU-1001,NVMe SSD 1TB,Storage,84,7499.00,20,Mumbai-W1
+SKU-1002,USB-C Dock,Accessories,42,5299.00,15,Bengaluru-W2
+SKU-1003,27-inch Monitor,Displays,19,18999.00,10,Delhi-W1
+SKU-1004,Mechanical Keyboard,Peripherals,63,6499.00,20,Chennai-W1
+SKU-1005,Wi-Fi 6 Router,Networking,31,8999.00,12,Mumbai-W1
+SKU-1006,Server RAM 32GB,Components,17,12499.00,10,Bengaluru-W2
+SKU-1007,UPS 1500VA,Power,11,15999.00,8,Delhi-W1
+SKU-1008,Cat6 Cable 10m,Networking,125,899.00,30,Chennai-W1

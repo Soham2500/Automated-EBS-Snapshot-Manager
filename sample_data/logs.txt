@@ -1,0 +1,10 @@
+2026-07-01T01:00:00Z INFO backup_started volumes=3
+2026-07-01T01:00:02Z INFO snapshot_created snapshot=snap-0a11 volume=vol-001
+2026-07-01T01:00:04Z INFO snapshot_created snapshot=snap-0b22 volume=vol-002
+2026-07-01T01:00:06Z INFO snapshot_created snapshot=snap-0c33 volume=vol-003
+2026-07-01T01:00:07Z INFO notification_published topic=operations
+2026-07-01T01:00:08Z INFO retention_cleanup deleted=2
+2026-07-01T01:00:08Z INFO backup_completed status=success duration_seconds=8.14
+2026-07-02T01:00:00Z INFO backup_started volumes=3
+2026-07-02T01:00:02Z ERROR snapshot_failed volume=vol-002 reason=throttled
+2026-07-02T01:00:05Z INFO backup_completed status=partial_failure duration_seconds=5.21

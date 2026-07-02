@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>EBS Snapshot Dashboard</title>
+    <style>
+        :root { color-scheme: dark; font-family: Inter, system-ui, sans-serif; }
+        body { margin: 0; background: #08111f; color: #e7edf7; }
+        main { max-width: 1100px; margin: auto; padding: 3rem 1.25rem; }
+        h1 { margin-bottom: .25rem; }
+        .subtitle { color: #95a8c4; margin-top: 0; }
+        .metrics { display: grid; grid-template-columns: repeat(auto-fit,
+            minmax(210px, 1fr)); gap: 1rem; margin: 2rem 0; }
+        .card { background: #101d30; border: 1px solid #203653;
+            border-radius: 12px; padding: 1.25rem; }
+        .label { color: #8ea2bf; font-size: .8rem; text-transform: uppercase;
+            letter-spacing: .08em; }
+        .value { font-size: 1.35rem; margin-top: .5rem; overflow-wrap: anywhere; }
+        table { width: 100%; border-collapse: collapse; background: #101d30; }
+        th, td { text-align: left; padding: .8rem; border-bottom: 1px solid #203653; }
+        th { color: #75c8ff; }
+        .empty { color: #95a8c4; text-align: center; }
+    </style>
+</head>
+<body>
+<main>
+    <h1>Automated EBS Snapshot Manager</h1>
+    <p class="subtitle">Operational backup status from the snapshot report</p>
+    <section class="metrics">
+        <div class="card"><div class="label">Total Snapshots</div>
+            <div class="value">{{ metrics.total_snapshots }}</div></div>
+        <div class="card"><div class="label">Latest Snapshot</div>
+            <div class="value">{{ metrics.latest_snapshot }}</div></div>
+        <div class="card"><div class="label">Last Backup Time</div>
+            <div class="value">{{ metrics.last_backup_time }}</div></div>
+        <div class="card"><div class="label">Backup Status</div>
+            <div class="value">{{ metrics.backup_status }}</div></div>
+    </section>
+    <h2>Recent snapshot activity</h2>
+    <table>
+        <thead><tr><th>Snapshot</th><th>Volume</th><th>Created</th><th>Status</th></tr></thead>
+        <tbody>
+        {% for snapshot in snapshots %}
+            <tr><td>{{ snapshot['Snapshot ID'] }}</td>
+                <td>{{ snapshot['Volume ID'] }}</td>
+                <td>{{ snapshot['Creation Time'] }}</td>
+                <td>{{ snapshot['Status'] }}</td></tr>
+        {% else %}
+            <tr><td class="empty" colspan="4">No snapshot records available.</td></tr>
+        {% endfor %}
+        </tbody>
+    </table>
+</main>
+</body>
+</html>

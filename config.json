@@ -1,0 +1,13 @@
+{
+    "region": "ap-south-1",
+    "retention_days": 7,
+    "volumes": [
+        "vol-0da27d539b52658d8"
+    ],
+    "project_name": "Automated-EBS-Snapshot-Manager",
+    "sns_topic_arn": "",
+    "dry_run": false,
+    "availability_zone": "ap-south-1a",
+    "volume_type": "gp3",
+    "report_path": "reports/snapshot_report.csv"
+}

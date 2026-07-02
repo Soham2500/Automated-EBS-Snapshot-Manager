@@ -1,0 +1,9 @@
+customer_id,name,email,city,segment,joined_date
+C1001,Aarav Mehta,aarav.mehta@example.com,Mumbai,Enterprise,2024-02-18
+C1002,Diya Nair,diya.nair@example.com,Kochi,SMB,2024-06-07
+C1003,Kabir Singh,kabir.singh@example.com,Delhi,Consumer,2025-01-21
+C1004,Meera Iyer,meera.iyer@example.com,Chennai,Enterprise,2023-11-03
+C1005,Rohan Patel,rohan.patel@example.com,Ahmedabad,SMB,2025-05-14
+C1006,Sana Khan,sana.khan@example.com,Hyderabad,Consumer,2024-09-29
+C1007,Vihaan Rao,vihaan.rao@example.com,Bengaluru,Enterprise,2023-08-12
+C1008,Ananya Das,ananya.das@example.com,Kolkata,SMB,2025-12-01
